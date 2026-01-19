@@ -77,72 +77,20 @@ function PricingSection() {
     <section className="py-16 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Simple, Transparent Pricing</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">TrustCert Founder License</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Choose the plan that fits your agency's audit needs
+            The industry standard for agency compliance certification
           </p>
+          <div className="mt-6 bg-destructive/10 border border-destructive/30 rounded-lg p-3 inline-block">
+            <p className="text-sm font-bold text-destructive">
+              STRATEGIC ACCESS: Only 5 Founder Licenses Remaining
+            </p>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Standard Plan */}
-          <div className="border border-border rounded-lg p-8 bg-card hover:border-primary/50 transition-colors">
-            <h3 className="text-xl font-bold text-foreground mb-2">Standard</h3>
-            <p className="text-muted-foreground text-sm mb-6">Monthly plan</p>
-            <div className="mb-6">
-              <span className="text-4xl font-bold text-foreground">$49</span>
-              <span className="text-muted-foreground">/month</span>
-            </div>
-            <ul className="space-y-3 mb-8 text-sm text-foreground">
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                Full Neural Audit access
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                Branded PDF Certificates
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                24/7 Support
-              </li>
-            </ul>
-            <button className="w-full py-2 px-4 rounded-lg border border-primary text-primary hover:bg-primary/5 transition-colors">
-              Get Started
-            </button>
-          </div>
-
-          {/* Professional Plan */}
-          <div className="border border-border rounded-lg p-8 bg-card hover:border-primary/50 transition-colors">
-            <h3 className="text-xl font-bold text-foreground mb-2">Professional</h3>
-            <p className="text-muted-foreground text-sm mb-6">Annual plan</p>
-            <div className="mb-6">
-              <span className="text-4xl font-bold text-foreground">$579</span>
-              <span className="text-muted-foreground">/year</span>
-            </div>
-            <div className="bg-success/10 text-success text-xs font-semibold px-3 py-1 rounded-full inline-block mb-4">
-              Save 2 months
-            </div>
-            <ul className="space-y-3 mb-8 text-sm text-foreground">
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                Everything in Standard
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                Priority API access
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                Advanced analytics
-              </li>
-            </ul>
-            <button className="w-full py-2 px-4 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity">
-              Subscribe Now
-            </button>
-          </div>
-
+        <div className="grid grid-cols-1 gap-6 max-w-2xl mx-auto">
           {/* Founder License */}
-          <div className="border-2 border-primary rounded-lg p-8 bg-card relative overflow-hidden md:transform md:scale-105">
+          <div className="border-2 border-primary rounded-lg p-8 bg-card relative overflow-hidden">
             <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-3 py-1 text-xs font-bold">
               MOST POPULAR
             </div>
@@ -175,8 +123,8 @@ function PricingSection() {
                 White-label Certificates
               </li>
             </ul>
-            <button className="w-full py-2 px-4 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity font-bold">
-              Secure My License
+            <button className="w-full py-3 px-4 bg-[#d4af37] text-black rounded-lg hover:bg-[#e6c850] transition-colors font-bold">
+              Secure My License Now
             </button>
           </div>
         </div>
