@@ -6,10 +6,18 @@ import { Button } from "@/components/ui/button"
 
 
 export function PricingSection() {
+  const trialFeatures = [
+    "2 Total Compliance Audits",
+    "Standard Report ID",
+    "Basic Audit Results",
+    "No PDF Certificate Download",
+  ]
+
   const founderFeatures = [
     "Permanent Agency License",
     "Unlimited Audits",
     "Full Verification ID History",
+    "PDF Certificate Downloads",
     "White-label Options",
     "Lifetime Updates",
     "Priority 24/7 Support",
@@ -31,15 +39,42 @@ export function PricingSection() {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
-            TrustCert Founder License
+            Choose Your Plan
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            The industry-standard compliance certification for agency owners. One-time investment for lifetime access.
+            Start with a free trial or unlock unlimited access with a Founder License
           </p>
         </div>
 
-        {/* Pricing Cards - Single Founder License */}
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8 max-w-2xl mx-auto">
+        {/* Pricing Cards - Trial and Founder */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
+          {/* Trial Card */}
+          <div className="rounded-2xl border border-border bg-card p-8 relative flex flex-col hover:border-primary/50 transition-colors">
+            <h3 className="text-xl font-semibold text-foreground mb-2">Complimentary Security Clearance</h3>
+            <p className="text-sm text-muted-foreground mb-6">Risk-free trial to test TrustCert</p>
+
+            <div className="mb-6">
+              <div className="flex items-baseline gap-2">
+                <span className="text-4xl font-bold text-foreground">$0</span>
+                <span className="text-sm text-muted-foreground">forever</span>
+              </div>
+              <p className="text-xs text-muted-foreground mt-2">No credit card required</p>
+            </div>
+
+            <ul className="space-y-3 mb-8 flex-1">
+              {trialFeatures.map((feature, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-muted-foreground mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground text-sm">{feature}</span>
+                </li>
+              ))}
+            </ul>
+
+            <Button className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-lg py-2.5 font-bold">
+              Start Free Audit
+            </Button>
+          </div>
+
           {/* Founder's License - Most Popular */}
           <div className="rounded-2xl border-2 border-primary bg-card p-8 relative flex flex-col shadow-lg hover:shadow-xl transition-shadow">
             {/* Limited Availability Badge */}

@@ -726,6 +726,9 @@ function AuthenticatedDashboard({ onLogout }: { onLogout: () => void }) {
 export default function Home() {
   const [view, setView] = useState<"landing" | "login" | "dashboard">("landing")
   const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [auditAttempts, setAuditAttempts] = useState(0)
+  const [isTrial, setIsTrial] = useState(false)
+  const [showPaywallModal, setShowPaywallModal] = useState(false)
 
   const handleLoginClick = () => setView("login")
   const handleBackToLanding = () => setView("landing")

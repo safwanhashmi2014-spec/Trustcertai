@@ -92,16 +92,21 @@ export function LoginPage({ onLogin, onBackToLanding }: LoginPageProps) {
               </Button>
             </form>
 
-            <div className="mt-6 p-4 bg-muted/50 border border-border rounded-lg text-center">
-              <p className="text-xs font-medium text-foreground mb-2">TrustCert Founder License</p>
-              <p className="text-sm font-bold text-[#d4af37]">$499 Lifetime Access</p>
-              <p className="text-xs text-muted-foreground mt-1">Limited to 5 agencies</p>
+            <div className="mt-6 space-y-3">
+              <div className="p-3 bg-muted/50 border border-border rounded-lg text-center">
+                <p className="text-xs font-medium text-foreground mb-1">Free Trial Available</p>
+                <p className="text-xs text-muted-foreground">2 Complimentary Audits</p>
+              </div>
+              <div className="p-3 bg-primary/10 border border-primary/30 rounded-lg text-center">
+                <p className="text-xs font-medium text-foreground mb-1">TrustCert Founder License</p>
+                <p className="text-sm font-bold text-[#d4af37]">$499 Lifetime Access</p>
+              </div>
             </div>
 
             <p className="text-xs text-muted-foreground text-center mt-4">
-              Don't have a license yet?{" "}
+              New user?{" "}
               <button onClick={onBackToLanding} className="text-primary hover:underline font-medium">
-                Get Access Now
+                Start Free Trial
               </button>
             </p>
           </CardContent>
