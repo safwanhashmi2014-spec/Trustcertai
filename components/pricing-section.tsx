@@ -101,7 +101,7 @@ export function PricingSection() {
             </div>
 
             <ul className="space-y-3 mb-8 flex-1">
-              {founderFeatures.map((feature, idx) => (
+              {founderFeatures.map((feature, idx) = (
                 <li key={idx} className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-success mt-0.5 flex-shrink-0" />
                   <span className="text-foreground text-sm">{feature}</span>
