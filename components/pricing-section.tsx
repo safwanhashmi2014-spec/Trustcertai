@@ -24,7 +24,7 @@ export function PricingSection() {
     "Custom Integration Support",
   ]
 
-  const spotsLeft = 5
+  const spotsLeft = 2
 
   return (
     <section className="py-16 px-4 bg-background">
